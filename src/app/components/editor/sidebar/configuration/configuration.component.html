@@ -1,0 +1,29 @@
+<div class="uk-card uk-card-default uk-card-small uk-width-1-1 uk-margin-bottom uk-card-hover uk-animation-scale-up">
+  <div class="uk-card-header">
+    <div class="uk-grid-small uk-flex-middle" uk-grid>
+      <h3 class="uk-card-title uk-margin-remove-bottom">Configuration</h3>
+    </div>
+  </div>
+  <div class="uk-card-body">
+  <form>
+    <fieldset class="uk-fieldset">
+      <div class="uk-margin">
+        <label class="uk-form-label" for="form-stacked-text">Google font @import</label>
+        <input [(ngModel)]="configurationModel.googleFont" [class.uk-form-danger]="!configurationModel.googleFont" name="googleFont" class="uk-input" type="text">
+      </div>
+      <div class="uk-margin">
+        <label class="uk-form-label" for="form-stacked-text">Default container width (In pixels)</label>
+        <input [(ngModel)]="configurationModel.containerWidth" [class.uk-form-danger]="!configurationModel.containerWidth" name="containerWidth" class="uk-input" type="number">
+      </div>
+      <div class="uk-margin">
+        <label class="uk-form-label" for="form-stacked-text">Portal background color</label>
+        <input [(ngModel)]="configurationModel.portalBackground" [class.uk-form-danger]="!configurationModel.portalBackground" name="portalBackground" class="uk-input" type="text">
+      </div>
+      <div class="uk-margin">
+        <label class="uk-form-label" for="form-stacked-text">Extra custom CSS</label>
+        <textarea [(ngModel)]="configurationModel.customCSS" [class.uk-form-danger]="!configurationModel.customCSS" name="customCSS" class="uk-textarea" rows="5"></textarea>
+      </div>
+    </fieldset>
+  </form>
+  </div>
+</div>

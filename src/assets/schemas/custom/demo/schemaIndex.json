@@ -1,0 +1,14 @@
+{ "schemaIndex":
+  [
+    {
+      "title": "Header",
+      "description": "none",
+      "alias": "header"
+    },
+    {
+      "title": "Footer",
+      "description": "none",
+      "alias": "footer"
+    }
+  ]
+}

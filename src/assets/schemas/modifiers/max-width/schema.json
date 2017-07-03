@@ -1,0 +1,10 @@
+{ "schema":
+  {
+    "title": "Max Width",
+    "description": "Defines the size of a container.",
+    "alias": "max-width",
+    "type": "text-line",
+    "value": "450px",
+    "modifierCSS": "{{ELEMENT}}{max-width: {{max-width}};}"
+  }
+}

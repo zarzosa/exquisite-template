@@ -1,0 +1,19 @@
+{ "schema":
+  {
+  "title": "Demo Header",
+  "description": "Image: <img>.",
+  "alias": "header",
+  "inputs": [
+    {
+      "label": "Source URL",
+      "description": "Source URL.",
+      "alias": "source",
+      "type": "text-line",
+      "value": "https://www.avature.net/portal/42/img/avature-footer.svg"
+    }
+  ],
+  "modifiers": [],
+  "templateCSS": ".{{header}}__logo{max-width: 220px; display: block; margin: 0 auto;} .{{header}}__line{max-width: 100px; margin: 15px auto; border-color: #666;}",
+  "templateHTML": "<img src='{{source}}' class='{{header}}__logo'/><hr class='{{header}}__line'>"
+  }
+}

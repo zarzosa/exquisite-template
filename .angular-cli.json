@@ -1,7 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "exquisite-template"
+    "name": "exquisite-template",
+    "ejected": false
   },
   "apps": [
     {
@@ -19,9 +20,14 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "assets/uikit/src/less/uikit.theme.less",
         "styles.less"
       ],
-      "scripts": [],
+      "scripts": [
+        "assets/jquery/dist/jquery.min.js",
+        "assets/uikit/dist/js/uikit.min.js",
+        "assets/uikit/dist/js/uikit-icons.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
@@ -52,6 +58,7 @@
   },
   "defaults": {
     "styleExt": "less",
-    "component": {}
+    "component": {
+    }
   }
 }

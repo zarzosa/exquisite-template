@@ -1,0 +1,29 @@
+{ "schemaIndex":
+  [
+    {
+      "title": "Text Align",
+      "description": "none",
+      "alias": "text-align"
+    },
+    {
+      "title": "Text color",
+      "description": "none",
+      "alias": "text-color"
+    },
+    {
+      "title": "Max Width",
+      "description": "none",
+      "alias": "max-width"
+    },
+    {
+      "title": "Margin",
+      "description": "none",
+      "alias": "margin"
+    },
+    {
+      "title": "Padding",
+      "description": "none",
+      "alias": "padding"
+    }
+  ]
+}

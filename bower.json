@@ -1,0 +1,21 @@
+{
+  "name": "exquisite-template",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Emmanuel Zarzosa <emmanuel-z@outlook.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "uikit": "3.0.0-beta.18"
+  }
+}

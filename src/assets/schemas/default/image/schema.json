@@ -1,0 +1,36 @@
+{ "schema":
+  {
+  "title": "Image",
+  "description": "Image: <img>.",
+  "alias": "image",
+  "inputs": [
+    {
+      "label": "Source URL",
+      "description": "Image URL.",
+      "alias": "source",
+      "type": "text-line",
+      "value": "https://t3.ftcdn.net/jpg/01/18/74/18/240_F_118741855_tBbHoPtEp4SqgNjirSEFebee5WqixMqg.jpg"
+    },
+    {
+      "label": "Width",
+      "description": "Width style.",
+      "alias": "width",
+      "type": "select",
+      "options": [
+        {
+          "text": "Default",
+          "value": "auto"
+        },
+        {
+          "text": "Full",
+          "value": "100%"
+        }
+      ],
+      "value": "auto"
+    }
+  ],
+  "modifiers": [],
+  "templateCSS": ".{{image}}__format{width: {{width}}; max-width: 100%;}",
+  "templateHTML": "<p><img src='{{source}}' class='{{image}}__format'/></p>"
+  }
+}

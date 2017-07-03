@@ -1,0 +1,19 @@
+{ "schema":
+  {
+  "title": "Demo Footer",
+  "description": "Image: <img>.",
+  "alias": "footer",
+  "inputs": [
+    {
+      "label": "Text",
+      "description": "Text.",
+      "alias": "text",
+      "type": "text-line",
+      "value": "© Copyright 2017 - Company"
+    }
+  ],
+  "modifiers": [],
+  "templateCSS": ".{{footer}}__format{text-align: center;} .{{footer}}__social{max-width: 300px;} .{{footer}}__text{margin-top: 0;}",
+  "templateHTML": "<footer class='{{footer}}__format'><img src='https://answers.squarespace.com/upfiles/NEW_SOCIAL_BUTTONS_2.jpg' class='{{footer}}__social'/><p class='{{footer}}__text'>{{text}}</p></footer>"
+  }
+}

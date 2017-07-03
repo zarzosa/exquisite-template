@@ -1,0 +1,24 @@
+{ "schema":
+  {
+    "title": "Text Align",
+    "description": "Alignment of a text.",
+    "alias": "text-align",
+    "type": "select",
+    "options": [
+      {
+        "text": "Left",
+        "value": "left"
+      },
+      {
+        "text": "Center",
+        "value": "center"
+      },
+      {
+        "text": "Right",
+        "value": "right"
+      }
+    ],
+    "value": "left",
+    "modifierCSS": "{{ELEMENT}}{text-align: {{text-align}};}"
+  }
+}

@@ -1,0 +1,52 @@
+{ "schema":
+  {
+    "title": "Title",
+    "description": "Title are defined with the Heading 1 to Heading 6 tags. Heading 1 defines the most important heading. Heading 6 defines the least important heading.",
+    "alias": "title",
+    "inputs": [
+      {
+        "label": "Text",
+        "description": "Text to be displayed in the template.",
+        "alias": "text",
+        "type": "text-line",
+        "value": "Type some text"
+      },
+      {
+        "label": "Relevance",
+        "description": "Importance of the title (1 is the highest).",
+        "alias": "style",
+        "type": "select",
+        "options": [
+          {
+            "text": "Heading 1",
+            "value": "h1"
+          },
+          {
+            "text": "Heading 2",
+            "value": "h2"
+          },
+          {
+            "text": "Heading 3",
+            "value": "h3"
+          },
+          {
+            "text": "Heading 4",
+            "value": "h4"
+          },
+          {
+            "text": "Heading 5",
+            "value": "h5"
+          },
+          {
+            "text": "Heading 6",
+            "value": "h6"
+          }
+        ],
+        "value": "h1"
+      }
+    ],
+    "modifiers": [],
+    "templateCSS": "",
+    "templateHTML": "<{{style}}>{{text}}</{{style}}>"
+  }
+}

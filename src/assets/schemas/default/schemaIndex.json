@@ -1,0 +1,19 @@
+{ "schemaIndex":
+  [
+    {
+      "title": "Title",
+      "description": "none",
+      "alias": "title"
+    },
+    {
+      "title": "Paragraph",
+      "description": "none",
+      "alias": "paragraph"
+    },
+    {
+      "title": "Image",
+      "description": "none",
+      "alias": "image"
+    }
+  ]
+}

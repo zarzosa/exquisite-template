@@ -1,0 +1,24 @@
+<div uk-grid>
+  <aside class="uk-width-1-3" [class.uk-hidden]="fullView">
+    <app-sidebar></app-sidebar>
+  </aside>
+  <main class="uk-width-expand">
+    <div uk-grid>
+      <div class="uk-width-1-2">
+        <a (click)="setPreviewSize('full')" [ngClass]="{'uk-icon-link': !isPreviewSize('full')}" uk-icon="icon:  laptop"></a>
+        <a (click)="setPreviewSize('medium')" [ngClass]="{'uk-icon-link': !isPreviewSize('medium')}" uk-icon="icon:  tablet"></a>
+        <a (click)="setPreviewSize('small')" [ngClass]="{'uk-icon-link': !isPreviewSize('small')}" uk-icon="icon:  phone"></a>
+      </div>
+      <div class="uk-width-1-2 uk-text-right">
+        <a (click)="fullView=!fullView">
+          <span *ngIf="fullView==false" uk-icon="icon: plus-circle"></span>
+          <span *ngIf="fullView" uk-icon="icon: minus-circle"></span>
+        </a>
+      </div>
+    </div>
+    <hr>
+    <div [ngClass]="{'full': isPreviewSize('full'), 'medium': isPreviewSize('medium'), 'small': isPreviewSize('small')}" class="preview">
+      <app-preview></app-preview>
+    </div>
+  </main>
+</div>

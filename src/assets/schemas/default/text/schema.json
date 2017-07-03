@@ -1,0 +1,19 @@
+{ "schema":
+  {
+  "title": "Paragraph",
+  "description": "Text: <p>.",
+  "alias": "paragraph",
+  "inputs": [
+    {
+      "label": "Text",
+      "description": "Paragraph text.",
+      "alias": "text",
+      "type": "text-area",
+      "value": "Lorem ipsum dolor..."
+    }
+  ],
+  "modifiers": [],
+  "templateCSS": "",
+  "templateHTML": "<p>{{text}}</p>"
+  }
+}

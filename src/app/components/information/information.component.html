@@ -1,0 +1,17 @@
+<div class="uk-grid uk-animation-fade">
+  <div class="uk-width-1-5">
+    <div class="uk-card uk-card-body uk-width-1-1">
+      <ul class="uk-nav uk-nav-default">
+        <li class="uk-nav-header">Elements List</li>
+        <li *ngFor="let element of elementsModel; let i = index"><a routerLink="/editor/information/element/{{ i }}">{{ i }}.- {{ element.title }}</a></li>
+        <li class="uk-nav-divider"></li>
+        <li><a routerLink="/editor/layout">Back</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="uk-width-expand">
+    <h3 class="uk-heading-divider">{{ element.title }}</h3>
+    <p>{{ element.description }}</p>
+  </div>
+</div>

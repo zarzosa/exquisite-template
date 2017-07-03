@@ -1,0 +1,9 @@
+<ul class="uk-tab">
+  <li routerLinkActive="uk-active" (click)="getSection()"><a routerLink="/editor/configuration">Configuration</a></li>
+  <li routerLinkActive="uk-active" (click)="getSection()"><a routerLink="/editor/layout">Layout</a></li>
+  <li routerLinkActive="uk-active" (click)="getSection()"><a routerLink="/editor/export">Export</a></li>
+</ul>
+
+<app-configuration *ngIf="getSection('configuration')"></app-configuration>
+<app-layout *ngIf="getSection('layout')"></app-layout>
+<app-export *ngIf="getSection('export')"></app-export>

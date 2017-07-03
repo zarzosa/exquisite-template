@@ -1,0 +1,7 @@
+<div class="uk-child-width-1-2 uk-text-center uk-grid uk-grid-small">
+  <div *ngFor="let item of elementsIndex; let i = index">
+      <a (click)="createElementModel()"><div class="uk-card uk-card-default uk-card-primary uk-card-body uk-margin-bottom">{{ item.title }}</div></a>
+  </div>
+</div>
+
+<button routerLink="/editor/layout" class="uk-button uk-button-default uk-width-1-1 uk-margin-small-bottom uk-animation-fade">Cancel</button>

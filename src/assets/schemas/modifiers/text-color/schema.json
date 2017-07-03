@@ -1,0 +1,10 @@
+{ "schema":
+  {
+    "title": "Text Color",
+    "description": "Defines the color of a text.",
+    "alias": "text-color",
+    "type": "text-line",
+    "value": "#1e87f0",
+    "modifierCSS": "{{ELEMENT}}{color: {{text-color}};}"
+  }
+}
